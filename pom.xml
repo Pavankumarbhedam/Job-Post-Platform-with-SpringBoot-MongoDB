@@ -26,6 +26,8 @@
 		<tag/>
 		<url/>
 	</scm>
+	<packaging>jar</packaging>
+
 	<properties>
 		<java.version>21</java.version>
 
