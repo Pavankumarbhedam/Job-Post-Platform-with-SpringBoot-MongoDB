@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@CrossOrigin(origins = "https://job-post-platform-with-springboot-rxrb.onrender.com")
 public class JobPostController {
 
     @Autowired
