@@ -119,12 +119,3 @@ function displaySearchResults(jobs) {
     });
 }
 
-function editJob(jobId) {
-    console.log("Editing job with ID:", jobId);
-    // Implement edit functionality here
-}
-
-function deleteJob(jobId) {
-    console.log("Deleting job with ID:", jobId);
-    // Implement delete functionality here
-}

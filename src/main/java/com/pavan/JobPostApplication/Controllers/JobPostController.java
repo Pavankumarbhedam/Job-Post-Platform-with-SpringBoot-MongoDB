@@ -34,4 +34,10 @@ public class JobPostController {
     }
 
 
+     @GetMapping("deleteing{Text}")
+    public void delete(@RequestBody JobData job)
+     {
+
+     }
+
 }
