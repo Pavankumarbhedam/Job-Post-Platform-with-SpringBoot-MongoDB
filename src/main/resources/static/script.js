@@ -12,7 +12,7 @@ async function fetchJobs() {
   //  console.log("Fetching jobs..."); // Debugging line to check if this is being called
     showSection('jobs'); // Make sure the "View Jobs" section is displayed
     try {
-        const response = await fetch("https://job-post-platform-with-springboot-rxrb.onrender.com/posts"); // Update the backend API endpoint if needed
+        const response = await fetch("https://job-post-platform-with-springboot.onrender.com/posts"); // Update the backend API endpoint if needed
         const jobs = await response.json();
     //    console.log("Fetched jobs:", jobs);  // This should log the fetched jobs in the console
 
@@ -65,7 +65,7 @@ async function addJob() {
     if (profile && des && exp && tech.length > 0) {
         const job = { profile, des, exp, tech };
         try {
-            await fetch("https://job-post-platform-with-springboot-rxrb.onrender.com/addJobPost", {
+            await fetch("https://job-post-platform-with-springboot.onrender.com/addJobPost", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(job)
@@ -88,7 +88,7 @@ async function searchJobs() {
     }
 
     try {
-        const response = await fetch(`https://job-post-platform-with-springboot-rxrb.onrender.com/posts/search/${encodeURIComponent(searchTerm)}`);
+        const response = await fetch(`https://job-post-platform-with-springboot.onrender.com/posts/search/${encodeURIComponent(searchTerm)}`);
         const jobs = await response.json();
 
         displaySearchResults(jobs);
